@@ -7,3 +7,7 @@ sudo hostnamectl set-hostname k8s-master
 ```
 sudo hostnamectl set-hostname k8s-workerx
 ```
+###### Check it 
+```
+hostname
+```
