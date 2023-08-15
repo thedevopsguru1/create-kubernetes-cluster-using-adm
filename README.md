@@ -40,3 +40,10 @@ cat << EOF | sudo tee /etc/modules-load.d/containerd.conf
 overlay
 br_netfilter
 ```
+###### Enable these modules
+```
+sudo modprobe overlay
+```
+```
+sudo modprobe br_netfilter
+```
