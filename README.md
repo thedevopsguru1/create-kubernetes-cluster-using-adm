@@ -74,4 +74,10 @@ sudo mkdir -p /etc/containerd
 ```
 ```
 sudo containerd config default | sudo tee /etc/containerd/config.toml
+```
+######## To make sure that containerd is using that configuration , we will restart it
+```
+sudo systemctl restart containerd
+```
+### 5- Install K8s packages
 
