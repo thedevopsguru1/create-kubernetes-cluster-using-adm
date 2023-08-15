@@ -11,11 +11,11 @@ sudo hostnamectl set-hostname k8s-workerx
 ```
 hostname
 ```
-### 3- Setup Host file on master
+### 3- Setup Host file on each server
 ```
 sudo vi /etc/hosts
 ```
-##### Add private ip address of each server
+##### Add private ip address of each server ( only the last three to other servers)
 
 ```
 127.0.0.1 localhost
@@ -26,3 +26,5 @@ sudo vi /etc/hosts
 172.31.106.83 k8s-worker1
 172.31.111.55 k8s-worker2
 ```
+###### Save and exit on each server , Then logout of each server and login again
+
