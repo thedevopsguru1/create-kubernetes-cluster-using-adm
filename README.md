@@ -28,3 +28,15 @@ sudo vi /etc/hosts
 ```
 ###### Save and exit on each server , Then logout of each server and login again
 
+### 4- Install COntainerd on each server
+```
+cat << EOF | sudo tee /etc/modules-load.d/containerd.conf
+```
+```
+> overlay
+> br_netfilter
+> EOF
+[sudo] password for cloud_user:
+overlay
+br_netfilter
+```
