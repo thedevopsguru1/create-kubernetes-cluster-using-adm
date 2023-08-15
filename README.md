@@ -64,3 +64,14 @@ net.bridge.bridge-nf-call-ip6tables = 1
 ```
 sudo sysctl --system
 ```
+##### Install Containerd
+```
+sudo apt-get update && sudo apt-get install -y containerd
+```
+##### Steup Conatainerd Configuration file
+```
+sudo mkdir -p /etc/containerd
+```
+```
+sudo containerd config default | sudo tee /etc/containerd/config.toml
+
