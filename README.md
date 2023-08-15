@@ -11,3 +11,9 @@ sudo hostnamectl set-hostname k8s-workerx
 ```
 hostname
 ```
+### 3- Setup Host file on master
+```
+sudo vi /etc/hosts
+```
+##### Add private ip address of each server
+
