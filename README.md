@@ -80,4 +80,12 @@ sudo containerd config default | sudo tee /etc/containerd/config.toml
 sudo systemctl restart containerd
 ```
 ### 5- Install K8s packages
+##### Disable swapoff
+```
+sudo swapoff -a
+```
+##### Install packages
+```
+sudo apt-get update && sudo apt-get install -y apt-transport-https curl
+```
 
